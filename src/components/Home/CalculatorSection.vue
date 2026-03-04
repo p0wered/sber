@@ -46,7 +46,7 @@
           </div>
         </div>
 
-        <div class="w-full max-w-92 xs:max-w-102 lg:max-w-none px-2">
+        <div class="w-full px-2">
           <LoanCalculator/>
         </div>
       </div>

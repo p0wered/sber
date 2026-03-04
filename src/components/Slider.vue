@@ -160,10 +160,10 @@
 <template>
   <div class="calc-slider">
     <div class="calc-slider__label flex flex-row justify-between items-end gap-4 text-md">
-      <div class="text-md md:text-lg text-black/90">
+      <div class="text-lg text-black/90">
         {{ label }}
       </div>
-      <div class="text-primary text-xl md:text-xl font-bold">
+      <div class="text-primary text-xl font-bold">
         <slot>{{ modelValue }}</slot>
       </div>
     </div>

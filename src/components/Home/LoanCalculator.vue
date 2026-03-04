@@ -49,46 +49,53 @@
   <div
     data-aos="fade-up"
     data-aos-delay="50"
-    class="bg-white p-5 lg:p-4 lg:pl-6 rounded-3xl border border-gray-200 w-full relative z-10"
+    class="bg-white rounded-3xl border border-gray-200 w-full relative z-10"
+    :class="[ small ? 'p-6' : 'p-6 lg:p-4 lg:pl-6' ]"
   >
-    <div class="flex md:hidden justify-center gap-2 mb-5">
+    <div
+      v-if="!small"
+      class="flex md:hidden justify-center gap-2 mb-5"
+    >
       <BadgeRussianRuble class="text-primary"/>
       <h2 class="font-medium text-center">
         Рассчитайте условия
       </h2>
     </div>
 
-    <div
-      :class="[
-        small ? 'flex flex-col sm:flex-row gap-0 sm:gap-10' : 'flex flex-col lg:flex-row gap-8'
-      ]"
-    >
-      <Slider
-        class="w-full"
-        :min="1000"
-        :max="100000"
-        :step="1000"
-        v-model="loanAmount"
-        label="Сумма займа"
-        type="amount"
-        @change="updateSavedCalculations">
-        {{loanAmountFormatted}}
-      </Slider>
+    <div :class="[ small ? 'flex flex-col gap-0 sm:gap-6' : 'flex flex-col lg:flex-row gap-6 md:gap-8' ]">
+      <div
+        :class="[
+          small ? 'w-full flex flex-col md:flex-row gap-8 mb-6' : 'w-full flex flex-col lg:flex-row gap-6 md:gap-8'
+        ]"
+      >
+        <Slider
+          class="w-full"
+          :min="1000"
+          :max="100000"
+          :step="1000"
+          v-model="loanAmount"
+          label="Сумма займа"
+          type="amount"
+          @change="updateSavedCalculations">
+          {{loanAmountFormatted}}
+        </Slider>
 
-      <Slider
-        class="w-full"
-        :min="LOAN_PERIOD_SLIDER_MIN"
-        :max="LOAN_PERIOD_SLIDER_MAX"
-        :step="1"
-        label="Срок займа"
-        type="period"
-        v-model="loanPeriod"
-        @change="updateSavedCalculations">
-        {{loanPeriodFormatted}}
-      </Slider>
+        <Slider
+          class="w-full"
+          :min="LOAN_PERIOD_SLIDER_MIN"
+          :max="LOAN_PERIOD_SLIDER_MAX"
+          :step="1"
+          label="Срок займа"
+          type="period"
+          v-model="loanPeriod"
+          @change="updateSavedCalculations">
+          {{loanPeriodFormatted}}
+        </Slider>
+      </div>
 
       <ButtonPrimary
-        class="lg:max-w-64 !md:text-lg"
+        class="!md:text-lg"
+        :class="{ 'lg:max-w-64': !small }"
         label="Оформить заявку"
         @click="() => navigateToApply(router)"
       />
@@ -96,6 +103,7 @@
   </div>
 
   <div
+    v-if="!small"
     data-aos="fade-up"
     data-aos-delay="100"
     class="flex gap-4 xs:gap-3 items-center w-fit mx-auto bg-white text-center p-3
