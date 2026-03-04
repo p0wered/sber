@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
       tailwindcss()
     ],
     base: isProductionMode
-      ? '/sites/alfa/'
+      ? '/sites/s-denga/'
       : '/',
     build: {
       manifest: true,

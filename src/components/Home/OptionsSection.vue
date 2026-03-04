@@ -78,7 +78,7 @@
         >
           <div
             class="bg-option relative bg-white border border-gray-200 flex flex-col
-          justify-between gap-4 md:gap-6 p-6 xs:p-8 min-h-136 md:min-h-[320px] rounded-3xl overflow-hidden
+          justify-between gap-4 md:gap-6 p-5 xs:p-8 min-h-124 md:min-h-[320px] rounded-3xl overflow-hidden
           max-w-120 md:max-w-none mx-auto hover:border-primary/80 hover:-translate-y-1 hover:shadow-xl/5
           transition"
             :style="{ backgroundImage: `url(${option.image})` }"
@@ -86,7 +86,7 @@
             <div class="flex flex-col gap-3 items-start">
               <div
                 class="bg-gray-200/70 w-fit text-neutral-700 flex justify-center
-              items-center gap-2 py-1.5 px-3 rounded-full mb-2"
+                items-center gap-2 py-1.5 px-3 rounded-full mb-0 xs:mb-2"
               >
                 <component
                   :is="option.icon"
@@ -100,7 +100,7 @@
               </div>
 
               <div class="space-y-1.5">
-                <h4 class="max-w-82 lg:max-w-none text-xl md:text-3xl font-bold">
+                <h4 class="max-w-52 2xs:max-w-80 lg:max-w-none text-xl md:text-3xl font-bold">
                   {{ option.titlePrefix }} <span class="whitespace-nowrap">{{ option.titlePrice }}</span>
                 </h4>
 
@@ -182,7 +182,7 @@
     .bg-option {
       background-size: 120%;
       background-position: bottom center;
-      background-position-y: 145px;
+      background-position-y: 115px;
     }
   }
 
@@ -190,7 +190,7 @@
     .bg-option {
       background-size: 120%;
       background-position: bottom center;
-      background-position-y: 140px;
+      background-position-y: 145px;
     }
   }
 </style>

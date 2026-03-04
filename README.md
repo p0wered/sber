@@ -1,4 +1,4 @@
-# Альфа Займ
+# С-Деньги
 
 ## Конфигурация
 
@@ -21,7 +21,7 @@
 
 ### Клонировать проект
 ```shell
-ssh://git@git.infg.tech:10022/templates/alfa-template.git
+ssh://git@git.infg.tech:10022/templates/s-denga-template.git
 ```
 
 ### Установить модули
