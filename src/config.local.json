@@ -1,0 +1,98 @@
+{
+  "http://localhost:5173": {
+    "type": "ООО",
+    "domain": "s-denga.ru",
+    "inn": "9719077344",
+    "kpp": "771901001",
+    "sum": "3333",
+    "name": "ИНВЕСТМАРКЕТ",
+    "order": "52 от 26.04.1986",
+    "address": "город Москва, ул. Пушкина, д. Колотушкина, 6",
+    "rknNumber": "77-25-175350",
+    "legalEntity": "ИНВЕСТМАРКЕТ",
+    "phoneNumber": "+7 (495) 003-35-89",
+    "source_data": [
+      "alliance",
+      "test_api",
+      "88ulun",
+      "pre_api",
+      "leads_api",
+      "guru_api",
+      "call_channel",
+      "leadsu",
+      "lg",
+      "guruleads"
+    ],
+    "acc_data_date": "01.03.2025",
+    "generalEntity": "Иванов Иван Иванович",
+    "offer_app_date": "01.03.2025",
+    "sub_agree_date": "01.03.2025",
+    "pd_consent_date": "01.03.2025",
+    "recur_agree_date": "03.03.2025",
+    "politics_obrab_date": "01.03.2025",
+    "individualEntrepreneurNumber": "1257700099084",
+    "email": "info@s-denga.ru",
+    "siteName": "C Деньги",
+    "headText": "Займы от 0%",
+    "headSubText": "С любой кредитной историей. Нужны только телефон и паспорт",
+    "signature_entity": "https://826a8082-816c-43d8-8f91-0bf0b39226bf.selstorage.ru/signature/21.png",
+    "seal_entity": "https://826a8082-816c-43d8-8f91-0bf0b39226bf.selstorage.ru/seal/21.png",
+    "siteId": 10,
+    "cid": 46,
+    "titles": {
+      "/": "В-Займ — мгновенные онлайн займы на карту. Персональный подбор займов",
+      "/test": "В-Займ — о сервисе",
+      "/about": "В-Займ — о сервисе",
+      "/apply": "В-Займ — онлайн займы на карту. Оформление заявки",
+      "/offers": "Витрина подобранных МФО и МКК",
+      "/payment": "В-Займ — оплата и безопасность",
+      "/contacts": "В-Займ — Контакты и помощь",
+      "/documents": "В-Займ — Документы",
+      "/apply/data": "В-Займ — онлайн займы на карту. Оформление заявки",
+      "/apply/pass": "В-Займ — онлайн займы на карту. Оформление заявки",
+      "/unsubscribe": "В-Займ — отключение платных услуг",
+      "/apply/companys": "В-Займ — витрина подобранных МФО и МКК",
+      "/apply/deeplink": "В-Займ — Ваша заявка одобрена",
+      "/apply/verification": "В-Займ — онлайн займы на карту. Оформление заявки",
+      "/apply/approved_verify": "В-Займ — Ваша заявка принята ✅",
+      "/apply/companys/slide-vitrina": "В-Займ — витрина подобранных МФО и МКК"
+    },
+    "documents": [
+      {
+        "slug": "offerta",
+        "pdf_path": "https://s-denga.ru/documents/offerta.pdf?cid=46",
+        "v_date": "20250804085424"
+      },
+      {
+        "slug": "sogl_podpiska",
+        "pdf_path": "https://s-denga.ru/documents/sogl_podpiska.pdf?cid=46",
+        "v_date": "20250804085424"
+      },
+      {
+        "slug": "politics_obrab",
+        "pdf_path": "https://s-denga.ru/documents/politics_obrab.pdf?cid=46",
+        "v_date": "20250804085424"
+      },
+      {
+        "slug": "recurr_payments_agreement",
+        "pdf_path": "https://s-denga.ru/documents/recurr_payments_agreement.pdf?cid=46",
+        "v_date": "20250804085424"
+      },
+      {
+        "slug": "card_data_agreement",
+        "pdf_path": "https://s-denga.ru/documents/card_data_agreement.pdf?cid=46",
+        "v_date": "20250804085424"
+      },
+      {
+        "slug": "sogl_obrab",
+        "pdf_path": "https://s-denga.ru/documents/sogl_obrab.pdf?cid=46",
+        "v_date": "20250804085424"
+      }
+    ],
+    "bots": {
+      "bot_support_link": "https://t.me/live_tehpodderzhka_bot" ,
+      "vk_link": "https://vk.me/finsos",
+      "bot_link": "https://t.me/zaym_help_bot"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+set -e
+
+npx --yes eslint .
+npx --yes vue-tsc -b
