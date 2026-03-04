@@ -5,7 +5,6 @@ import localConfig from '@/config.local.json';
 
 const configData = reactive<Record<string, any>>({});
 let loaded = false;
-let loading: Promise<void> | null = null;
 
 export function getTid(): string | null {
   const cookieMatch = document.cookie.match(/(?:^|; )tid=([^;]+)/);
@@ -31,30 +30,9 @@ export function getTid(): string | null {
 export function loadConfig(): Promise<void> {
   if (loaded) return Promise.resolve();
 
-  if (import.meta.env.DEV) {
-    Object.assign(configData, localConfig);
-    loaded = true;
-    return Promise.resolve();
-  }
-
-  if (!loading) {
-    const tid = getTid();
-    const url = new URL('/api/legal-data', window.location.origin);
-    if (tid) url.searchParams.set('tid', tid);
-
-    loading = fetch(url.toString())
-      .then(res => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.json();
-      })
-      .then(json => {
-        Object.assign(configData, json);
-        loaded = true;
-      })
-      .catch(err => console.error('Ошибка загрузки config:', err));
-  }
-
-  return loading!;
+  Object.assign(configData, localConfig);
+  loaded = true;
+  return Promise.resolve();
 }
 
 export const config = new Proxy(reactive(configData), {

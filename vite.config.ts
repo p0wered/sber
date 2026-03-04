@@ -3,17 +3,12 @@ import vue from '@vitejs/plugin-vue';
 import tailwindcss from "@tailwindcss/vite";
 import path from 'path';
 
-export default defineConfig(({ mode }) => {
-  const isProductionMode = mode === 'production';
-
+export default defineConfig(() => {
   return {
     plugins: [
       vue(),
       tailwindcss()
     ],
-    base: isProductionMode
-      ? '/sites/s-denga/'
-      : '/',
     build: {
       manifest: true,
       target: [
