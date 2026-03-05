@@ -23,15 +23,20 @@
             <img
               class="w-40 md:w-42 select-none"
               :src="Logo"
-              alt="Logo"
+              alt="С-Деньги"
             >
 
-            <div class="flex items-center gap-2">
-              <p class="hidden md:block text-sm font-medium">
+            <a href="/login" class="flex gap-2 items-center hover:opacity-70 transition">
+              <p class="hidden md:block text-sm md:text-base font-medium">
                 Личный кабинет
               </p>
-              <LogIn class="text-black md:text-primary w-6 h-6"/>
-            </div>
+              <div
+                class="w-11 md:w-auto h-11 md:h-auto flex items-center justify-center
+              bg-primary/15 md:bg-transparent rounded-xl"
+              >
+                <LogIn class="text-primary w-6 h-6 md:w-6 md:h-6"/>
+              </div>
+            </a>
           </div>
 
           <div class="max-w-3xl mx-auto pt-4 md:pt-24">

@@ -59,7 +59,7 @@
         <img
           class="w-32 md:w-36 h-8 md:h-8"
           :src="LogoBlack"
-          alt="АльфаЗайм"
+          alt="С-Деньги"
         >
       </router-link>
 
