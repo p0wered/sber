@@ -159,7 +159,7 @@
 
 <template>
   <div class="calc-slider">
-    <div class="calc-slider__label flex flex-row justify-between items-end gap-4 text-md">
+    <div class="calc-slider__label flex flex-row justify-between items-end gap-4 mb-1 text-md">
       <div class="text-lg text-black/90">
         {{ label }}
       </div>
@@ -200,7 +200,7 @@
       </div>
     </div>
 
-    <div class="calc-slider__info flex justify-between items-center text-sm text-black/70">
+    <div class="calc-slider__info flex justify-between items-center text-sm mt-1 text-black/70">
       <span>
         {{ infoLabel }}
       </span>

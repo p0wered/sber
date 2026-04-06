@@ -46,7 +46,7 @@
       class="max-w-6xl mx-auto flex justify-between items-center gap-3 relative"
       :class="
         onHomePage
-          ? 'bg-white/70 backdrop-blur-lg rounded-3xl shadow-md border border-gray-200 h-auto p-3 md:p-4'
+          ? 'bg-white/70 backdrop-blur-lg rounded-3xl shadow-md border border-gray-200 h-auto p-3 md:p-5'
           : 'md:h-auto h-[64px] p-4'"
     >
       <router-link

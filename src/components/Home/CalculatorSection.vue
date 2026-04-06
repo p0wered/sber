@@ -13,7 +13,7 @@
     <div class="absolute -bottom-24 left-1/3 w-[20rem] h-[20rem] rounded-full bg-primary/5 blur-[80px]"/>
     <div class="absolute top-1/2 left-1/4 w-[14rem] h-[14rem] rounded-full bg-primary-light/6 blur-[70px]"/>
 
-    <div class="relative w-full max-w-148 lg:max-w-6xl mx-auto md:px-8 pb-12 md:pb-36">
+    <div class="relative w-full max-w-148 lg:max-w-6xl mx-auto md:px-8 pb-12 md:pb-30">
       <div class="flex flex-col items-center justify-between gap-3">
         <div
           data-aos="fade-up"
@@ -39,8 +39,8 @@
             </a>
           </div>
 
-          <div class="max-w-3xl mx-auto pt-4 md:pt-24">
-            <h1 class="text-black text-4xl md:text-7xl font-black mb-2 md:mb-4 tracking-tight">
+          <div class="max-w-3xl mx-auto pt-4 md:pt-24 md:pb-8">
+            <h1 class="text-black text-4xl md:text-6xl font-black mb-2 md:mb-4 tracking-tight">
               Быстрые <span class="text-primary">займы</span>
             </h1>
 
