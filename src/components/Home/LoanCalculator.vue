@@ -65,7 +65,9 @@
     <div :class="[ small ? 'flex flex-col gap-0 sm:gap-6' : 'flex flex-col lg:flex-row gap-6 md:gap-8' ]">
       <div
         :class="[
-          small ? 'w-full flex flex-col md:flex-row gap-8 mb-6' : 'w-full flex flex-col lg:flex-row gap-6 md:gap-8'
+          small
+            ? 'w-full flex flex-col md:flex-row gap-8 mb-8 sm:mb-0'
+            : 'w-full flex flex-col lg:flex-row gap-6 md:gap-8'
         ]"
       >
         <Slider
@@ -94,8 +96,8 @@
       </div>
 
       <ButtonPrimary
-        class="!md:text-lg"
-        :class="{ 'lg:max-w-64': !small }"
+        class="md:!text-lg"
+        :class="{ 'lg:max-w-64 m-1': !small }"
         label="Оформить заявку"
         @click="() => navigateToApply(router)"
       />
